@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.scenes-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.scene-item {
+    position: relative;
+    flex: 1 1 auto;
+}
+
+@media (orientation: portrait) {
+    .scenes-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+}
